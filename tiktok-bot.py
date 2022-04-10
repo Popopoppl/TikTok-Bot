@@ -6,7 +6,7 @@ from colorama import init, Fore, Style
 init(autoreset=True)
 
 
-def loop1():  # views
+def loop1(1000000):  # views
     sleep(20)
     try:
         driver.find_element_by_xpath("/html/body/div[4]/div[1]/div[3]/div/div[4]/div/button").click()
@@ -35,7 +35,7 @@ def loop1():  # views
         loop1()
 
 
-def loop2():  # followers
+def loop2(10000):  # followers
     sleep(10)
     try:
         driver.find_element_by_xpath("/html/body/div[4]/div[1]/div[3]/div/div[1]/div/button").click()
@@ -64,7 +64,7 @@ def loop2():  # followers
         loop2()
 
 
-def loop3():  # shares
+def loop3(200):  # shares
     sleep(10)
     try:
         driver.find_element_by_xpath("/html/body/div[4]/div[1]/div[3]/div/div[5]/div/button").click()
@@ -93,7 +93,7 @@ def loop3():  # shares
         loop3()
 
 
-def loop4():  # likes
+def loop4(1000000):  # likes
     sleep(10)
     try:
         driver.find_element_by_xpath("/html/body/div[4]/div[1]/div[3]/div/div[2]/div/button").click()
@@ -169,7 +169,7 @@ I am not responsible for any damage of any kind for using this script''' + Fore.
 if __name__ == '__main__':
     banner()
 
-    vidUrl = input("Your Video URL : ")
+    vidUrl = input("Your Video URL :https://www.tiktok.com/@simp4popel/video/7059672546970471685 ")
     print("")
     bot = int(input("What do you want to do? \n1 - Get Views \n2 - Get Followers \n3 - Get Shares \n4 - Get Likes \n5 - Get Comments Likes \nPlease insert a number from the list : "))
     print("\n--------------------------------------")
